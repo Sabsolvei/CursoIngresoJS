@@ -1,7 +1,7 @@
 function Mostrar()
 {
 //tomo la edad  
-
+if
 	
 
 
