@@ -57,7 +57,7 @@ if(edad>18)
 	{
 		alert("Es adolescente");
 	}
-	}
+	
 }
 */
 
