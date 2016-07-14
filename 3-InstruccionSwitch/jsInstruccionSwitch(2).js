@@ -1,11 +1,34 @@
 function Mostrar()
 {
 //tomo la edad  
-var mesDelAño = document.getElementById('mes').value;
+	var mes = document.getElementById('mes').value;
+	
+	switch(mes)
+	{
+		case "Julio":
+		case "Agosto":
+		
+			alert("Abrigate que hace frio!");
+		
+		break;
+		
 
-alert (mesDelAño);
+		case "Junio":
+		case "Mayo":
+		case "Abril":
+		
+			alert("Aun no llegó el invierno");
+		
+		break;
+		
+		
+		default:
+			
+			alert("Ya pasamos el frio, ahora calor!");	
+		
+		break;
 
-
+	}
 
 
 }//FIN DE LA FUNCIÓN
