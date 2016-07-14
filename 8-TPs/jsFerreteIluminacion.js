@@ -51,6 +51,63 @@ function CalcularPrecio ()
 			
 		break;
 
+		case "FelipeLamparas":
+			if(cantidad==3)
+			{
+				descuento=0.9;
+			}
+			else
+			{
+				if(cantidad==4)
+				{
+					descuento=0.75;
+				}
+				else
+				{
+					if(cantidad==5)
+					{
+						descuento=0.7;
+					}
+					else
+					{
+						if(cantidad>=6)
+						{
+							descuento=0.5;
+						}
+					}
+				}
+			}
+		break;
+
+		default:
+			if(cantidad==3)
+			{
+				descuento=0.95;
+			}
+			else
+			{
+				if(cantidad==4)
+				{
+					descuento=0.8;
+				}
+				else
+				{
+					if(cantidad==5)
+					{
+						descuento=0.7;
+					}
+					else
+					{
+						if(cantidad>=6)
+						{
+							descuento=0.5;
+						}
+					}
+				}
+			}
+		break;
+
+
 	}//switch (marca)
 
 precioBruto = 35 * cantidad;
