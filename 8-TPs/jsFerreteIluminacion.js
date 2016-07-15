@@ -17,7 +17,7 @@ function CalcularPrecio ()
 	var descuento; 
 	var marca = document.getElementById('Marca').value;
 	var cantidad = document.getElementById('Cantidad').value;
-
+//hola
 	
 	switch(marca)
 	{
