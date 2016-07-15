@@ -18,6 +18,47 @@ function CalcularPrecio ()
 	var marca = document.getElementById('Marca').value;
 	var cantidad = document.getElementById('Cantidad').value;
 
+
+	if(Cantidad==3)
+	{
+		switch(marca)
+		{
+			case "ArgentinaLuz":
+			descuento=0.85;
+
+			break;
+
+			case "FelipeLamparas":
+			descuento=0.9;
+
+			break;
+
+			default:
+			descuento=0.95;
+		
+			break;
+		}
+		
+
+	precioBruto=cantidad*35;
+	precioNeto=precioBruto*descuento;
+	document.getElementById('precioDescuento').value=precioNeto;
+
+
+	}
+
+}
+
+
+
+/*//CONDICIÓN IF DENTRO DE UN SWITCH
+
+	var precioBruto;
+	var precioNeto;
+	var descuento; 
+	var marca = document.getElementById('Marca').value;
+	var cantidad = document.getElementById('Cantidad').value;
+
 	
 	switch(marca)
 	{
@@ -114,20 +155,21 @@ precioBruto = 35 * cantidad;
 precioNeto = precioBruto * descuento;
 document.getElementById('precioDescuento').value= precioNeto;
 
+if (precioNeto>120)
+{
+	precioNeto=precioNeto*1.1
+	alert("Usted pagó $ "+precioNeto*10/100+ " de IIBB")
+}
+
+
+
+
+
 }//function CalcularPrecio () 
 
+*/
 
-/*
-
-
-				
-
-
-
-
-
-
-
+/*//CONDICIÓN IF
 {
 	var cantLamparas;
 	var marca;
