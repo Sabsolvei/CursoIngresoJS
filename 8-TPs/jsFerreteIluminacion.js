@@ -36,7 +36,7 @@ function CalcularPrecio ()
 		
 			break;
 
-		}//switch
+		};//switch
 
 	}
 	else
@@ -82,9 +82,9 @@ function CalcularPrecio ()
 				{
 					descuento=0.5;
 				}
-			}
-		}
-	}
+			};
+		};
+	};
 
 precioBruto = 35 * cantidad;
 precioNeto = precioBruto * descuento;
@@ -94,9 +94,9 @@ if(precioNeto>120)
 {
 	precioNeto=precioNeto*1.1
 	alert("Usted pagó $ "+precioNeto*10/100+ " de IIBB")
-}
+};
 
-}//function CalcularPrecio
+};//function CalcularPrecio
 
 
 
