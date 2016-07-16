@@ -10,8 +10,98 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 
 function CalcularPrecio () 
-
 {
+	var precioBruto;
+	var precioNeto;
+	var descuento; 
+	var marca = document.getElementById('Marca').value;
+	var cantidad = document.getElementById('Cantidad').value;
+
+	if(cantidad==3)
+	{
+		switch(marca)
+		{
+			case "ArgentinaLuz":
+			descuento=0.85;
+
+			break;
+
+			case "FelipeLamparas":
+			descuento=0.9;
+
+			break;
+
+			default:
+			descuento=0.95;
+		
+			break;
+
+		};//switch
+
+	}
+	else
+	{
+		if(cantidad==4)
+		{
+			switch(marca)
+			{
+				case "ArgentinaLuz":
+				case "FelipeLamparas":
+				descuento=0.75;
+
+				break;
+
+				default:
+				descuento=0.80;
+			
+				break;
+
+			}//switch
+		}
+		else
+		{
+			if(cantidad==5)
+			{
+				switch(marca)
+				{
+					case "ArgentinaLuz":
+					descuento=0.60;
+
+					break;
+
+					default:
+					descuento=0.70;
+					
+					break;
+
+				}//switch
+			}
+			else
+			{
+				if(cantidad>=6)
+				{
+					descuento=0.5;
+				}
+			};
+		};
+	};
+
+precioBruto = 35 * cantidad;
+precioNeto = precioBruto * descuento;
+document.getElementById('precioDescuento').value= precioNeto;
+
+if(precioNeto>120)
+{
+	precioNeto=precioNeto*1.1
+	alert("Usted pagó $ "+precioNeto*10/100+ " de IIBB")
+};
+
+};//function CalcularPrecio
+
+
+
+/*//CONDICIÓN IF DENTRO DE UN SWITCH
+
 	var precioBruto;
 	var precioNeto;
 	var descuento; 
@@ -114,20 +204,21 @@ precioBruto = 35 * cantidad;
 precioNeto = precioBruto * descuento;
 document.getElementById('precioDescuento').value= precioNeto;
 
+if (precioNeto>120)
+{
+	precioNeto=precioNeto*1.1
+	alert("Usted pagó $ "+precioNeto*10/100+ " de IIBB")
+}
+
+
+
+
+
 }//function CalcularPrecio () 
 
+*/
 
-/*
-
-
-				
-
-
-
-
-
-
-
+/*//CONDICIÓN IF
 {
 	var cantLamparas;
 	var marca;
