@@ -52,14 +52,14 @@ function Mostrar()
 
 	}//FIN WHILE
 
-	document.writeln(positivos);
-	document.writeln(negativos);
-	document.writeln(acumPositivos);
-	document.writeln(acumNegativos);
-	document.writeln(acumCeros);
-	document.writeln(acumPares);
-	document.writeln(positivos/acumPositivos);
-	document.writeln(negativos/acumNegativos);
-	document.writeln(positivos-(negativos*(-1)));
+	document.writeln("<br>Suma de positivos: "+positivos);
+	document.writeln("<br>Suma de negativos: "+negativos);
+	document.writeln("<br>Positivos acumulados: "+acumPositivos);
+	document.writeln("<br>Negativos acumulados: "+acumNegativos);
+	document.writeln("<br>Ceros acumulados: "+acumCeros);
+	document.writeln("<br>Nros pares acumulados: "+acumPares);
+	document.writeln("<br>Promedio de positivos: "+positivos/acumPositivos);
+	document.writeln("<br>Promedio de negativos: "+negativos/acumNegativos);
+	document.writeln("<br>Diferencia de positivos y negativos: "+(positivos-(negativos*(-1))));
 
 }//FIN DE LA FUNCIÓN
