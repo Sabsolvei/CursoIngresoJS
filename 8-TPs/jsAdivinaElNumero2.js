@@ -70,6 +70,8 @@ function verificar()
 			case 10:
 				alert('Falta técnica. Lo hizo en '+contadorIntentos+' intentos.');
 			break;
+			default:
+				alert('Afortunado en el amor. Lo hizo en '+contadorIntentos+' intentos.')
 
 		}
 	}
