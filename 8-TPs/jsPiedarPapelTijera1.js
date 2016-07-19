@@ -10,7 +10,7 @@ function comenzar()
 {
 	
 eleccionMaquina=Math.floor((Math.random()*3)+1);
-alert(eleccionMaquina+' Es su turno, elija una opción');
+alert('Es su turno, elija una opción');
 
 }//FIN DE LA FUNCIÓN
 function piedra()
