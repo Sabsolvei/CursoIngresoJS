@@ -16,6 +16,7 @@ function comenzar()
 {
 	
 	numeroSecreto = Math.floor((Math.random()*20)+1);
+	alert('Es su turno. Ingreses un número')
 
 }
 	function verificar()
@@ -23,15 +24,14 @@ function comenzar()
 		numeroIngresado=document.getElementById('numero').value;
 		numeroIngresado=parseInt(numeroIngresado);
 		contadorIntentos=parseInt(contadorIntentos)+1;
-		alert(numeroIngresado);
-		alert(numeroSecreto);
+
 		if(numeroSecreto<numeroIngresado)
 		{
-			alert('Se pasó por '+(numeroIngresado-numeroSecreto)+' decimales para acertar');
+			alert('Se pasó');
 		}
 		else if(numeroSecreto>numeroIngresado)
 		{
-			alert('Le faltaron '+(numeroSecreto-numeroIngresado)+' decimales para acertar');
+			alert('Le faltó');
 		}
 		else if(numeroSecreto==numeroIngresado)
 		{
