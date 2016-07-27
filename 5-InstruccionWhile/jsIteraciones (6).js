@@ -7,9 +7,17 @@ function Mostrar()
 
 	while(contador<5)
 	{
-		numero=prompt("Ingrese un número");
 		contador=contador + 1;
+		numero=prompt("Ingrese un número");
+		while(isNaN(numero))
+		{
+			alert("No es un número")
+			numero=prompt("Ingrese un número");
+		}	
+	
 		acumulador=acumulador+parseInt(numero);
+
+		
 	}
 
 document.getElementById('suma').value=acumulador;
