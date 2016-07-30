@@ -25,6 +25,11 @@ var limite=100000;
 		}
 
 		var random = Math.floor((Math.random()*10)+1);
+
+		while (random==5 && contador5 > limite*0.05)
+		{
+			random = Math.floor((Math.random()*10)+1);
+		}
 		
 		switch(random)
 		{
