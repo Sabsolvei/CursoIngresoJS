@@ -2,6 +2,59 @@ var eleccionMaquina;
 var ContadorDeEmpates=0;
 var ContadorDeGanadas=0;
 var ContadorDePerdidas=0;
+var numeroSecreto;
+
+function comenzar()
+{
+
+numeroSecreto= Math.floor(Math.random()*3)+1;
+
+
+}//FIN DE LA FUNCIÓN
+
+function piedra()
+{
+
+switch numeroSecreto
+{
+	case 1:
+	alert('Empatados')
+	ContadorDeEmpates++
+	break;
+
+	case 2:
+	alert('Usted perdió')
+	ContadorDePerdidas++
+	break;
+
+	case 3:
+	alert('Usted ganó')
+	ContadorDeGanadas++
+	break;
+}
+
+
+}//FIN DE LA FUNCIÓN
+function papel()
+{
+
+
+}//FIN DE LA FUNCIÓN
+
+
+function tijera()
+{
+
+
+}//FIN DE LA FUNCIÓN
+
+function mostarResultado()
+{
+
+
+}
+
+/*
 
 function comenzar()
 {
@@ -23,9 +76,8 @@ function comenzar()
 		}
 		//alert(eleccionMaquina);
 
-
-
 }//FIN DE LA FUNCIÓN
+
 function piedra()
 {
 	alert("la maquina selecciono: "+eleccionMaquina);
@@ -37,7 +89,7 @@ function piedra()
 	}
 	else if(eleccionMaquina=="tijera")
 	{
-		alert("vos ganastes.");
+		alert("vos ganaste.");
 		ContadorDeGanadas++;
 	}
 	else
@@ -61,7 +113,7 @@ function papel()
 	}
 	else if(eleccionMaquina=="piedra")
 	{
-		alert("vos ganastes.");
+		alert("vos ganaste.");
 		ContadorDeGanadas++;
 	}
 	else
@@ -82,7 +134,7 @@ function tijera()
 	}
 	else if(eleccionMaquina=="papel")
 	{
-		alert("vos ganastes.");
+		alert("vos ganaste.");
 		ContadorDeGanadas++;
 	}
 	else
@@ -102,3 +154,5 @@ document.getElementById('ganadas').value=ContadorDeGanadas + " partidas ganadas.
 
 comenzar();
 }
+
+*/

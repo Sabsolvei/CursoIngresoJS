@@ -17,7 +17,7 @@ function ComenzarIngreso ()
  var nacionalidad='L';
 
  edad=prompt("Ingrese su edad");
-	 while(edad<18 || edad>90 && isNaN(edad))
+	 while(edad<18 || edad>90 || isNaN(edad))
 	 {
 	 	edad=prompt("Edad no permitida. Ingrese edad mayor a 18 y menor a 90");
 	 }
@@ -60,14 +60,9 @@ function ComenzarIngreso ()
 	 	}
 	 }
 	 
-	 while(nacionalidad!='A'&&nacionalidad!='E'&&nacionalidad!='N')
+	 while(nacionalidad!='A'&&nacionalidad!='E'&&nacionalidad!='N' && !isNaN(nacionalidad))
 	 {
 	 	nacionalidad=prompt("Ingrese su nacionalidad: A (argentina), E (extranjera) o N (nacionalizada)").toUpperCase();
-
-	 	while(!isNaN(nacionalidad))
-	 	{
-	 		nacionalidad=prompt(nacionalidad+" es inválido. Ingrese su nacionalidad");
-	 	}
 
 	 }
 
