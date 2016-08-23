@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1471914928 source:c:\users\alumno.lab4pc\desktop\ejerciciosuma\suma\main.c
+	<stdio.h>
+	<stdlib.h>
+
